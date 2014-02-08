@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5BC6A5018A67AF0003BE6EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC6A4F18A67AF0003BE6EA /* Foundation.framework */; };
+		D5BC6A5218A67AF0003BE6EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC6A5118A67AF0003BE6EA /* CoreGraphics.framework */; };
+		D5BC6A5418A67AF0003BE6EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC6A5318A67AF0003BE6EA /* UIKit.framework */; };
+		D5BC6A5618A67AF0003BE6EA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC6A5518A67AF0003BE6EA /* CoreData.framework */; };
+		D5BC6A5C18A67AF0003BE6EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5BC6A5A18A67AF0003BE6EA /* InfoPlist.strings */; };
+		D5BC6A5E18A67AF0003BE6EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC6A5D18A67AF0003BE6EA /* main.m */; };
+		D5BC6A6218A67AF0003BE6EA /* S10AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC6A6118A67AF0003BE6EA /* S10AppDelegate.m */; };
+		D5BC6A6518A67AF0003BE6EA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BC6A6318A67AF0003BE6EA /* Main_iPhone.storyboard */; };
+		D5BC6A6818A67AF0003BE6EA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BC6A6618A67AF0003BE6EA /* Main_iPad.storyboard */; };
+		D5BC6A6B18A67AF0003BE6EA /* supersekiguchi_ten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5BC6A6918A67AF0003BE6EA /* supersekiguchi_ten.xcdatamodeld */; };
+		D5BC6A6E18A67AF0003BE6EA /* S10MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC6A6D18A67AF0003BE6EA /* S10MasterViewController.m */; };
+		D5BC6A7118A67AF0003BE6EA /* S10DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC6A7018A67AF0003BE6EA /* S10DetailViewController.m */; };
+		D5BC6A7318A67AF0003BE6EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BC6A7218A67AF0003BE6EA /* Images.xcassets */; };
+		D5BC6A7A18A67AF0003BE6EA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC6A7918A67AF0003BE6EA /* XCTest.framework */; };
+		D5BC6A7B18A67AF0003BE6EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC6A4F18A67AF0003BE6EA /* Foundation.framework */; };
+		D5BC6A7C18A67AF0003BE6EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC6A5318A67AF0003BE6EA /* UIKit.framework */; };
+		D5BC6A7D18A67AF0003BE6EA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC6A5518A67AF0003BE6EA /* CoreData.framework */; };
+		D5BC6A8518A67AF0003BE6EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5BC6A8318A67AF0003BE6EA /* InfoPlist.strings */; };
+		D5BC6A8718A67AF0003BE6EA /* supersekiguchi_tenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC6A8618A67AF0003BE6EA /* supersekiguchi_tenTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5BC6A7E18A67AF0003BE6EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5BC6A4418A67AF0003BE6EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5BC6A4B18A67AF0003BE6EA;
+			remoteInfo = "supersekiguchi-ten";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5BC6A4C18A67AF0003BE6EA /* supersekiguchi-ten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "supersekiguchi-ten.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BC6A4F18A67AF0003BE6EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5BC6A5118A67AF0003BE6EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5BC6A5318A67AF0003BE6EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5BC6A5518A67AF0003BE6EA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D5BC6A5918A67AF0003BE6EA /* supersekiguchi-ten-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "supersekiguchi-ten-Info.plist"; sourceTree = "<group>"; };
+		D5BC6A5B18A67AF0003BE6EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5BC6A5D18A67AF0003BE6EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5BC6A5F18A67AF0003BE6EA /* supersekiguchi-ten-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "supersekiguchi-ten-Prefix.pch"; sourceTree = "<group>"; };
+		D5BC6A6018A67AF0003BE6EA /* S10AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S10AppDelegate.h; sourceTree = "<group>"; };
+		D5BC6A6118A67AF0003BE6EA /* S10AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S10AppDelegate.m; sourceTree = "<group>"; };
+		D5BC6A6418A67AF0003BE6EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D5BC6A6718A67AF0003BE6EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D5BC6A6A18A67AF0003BE6EA /* supersekiguchi_ten.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = supersekiguchi_ten.xcdatamodel; sourceTree = "<group>"; };
+		D5BC6A6C18A67AF0003BE6EA /* S10MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S10MasterViewController.h; sourceTree = "<group>"; };
+		D5BC6A6D18A67AF0003BE6EA /* S10MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S10MasterViewController.m; sourceTree = "<group>"; };
+		D5BC6A6F18A67AF0003BE6EA /* S10DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S10DetailViewController.h; sourceTree = "<group>"; };
+		D5BC6A7018A67AF0003BE6EA /* S10DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S10DetailViewController.m; sourceTree = "<group>"; };
+		D5BC6A7218A67AF0003BE6EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5BC6A7818A67AF0003BE6EA /* supersekiguchi-tenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "supersekiguchi-tenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BC6A7918A67AF0003BE6EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5BC6A8218A67AF0003BE6EA /* supersekiguchi-tenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "supersekiguchi-tenTests-Info.plist"; sourceTree = "<group>"; };
+		D5BC6A8418A67AF0003BE6EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5BC6A8618A67AF0003BE6EA /* supersekiguchi_tenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = supersekiguchi_tenTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5BC6A4918A67AF0003BE6EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BC6A5218A67AF0003BE6EA /* CoreGraphics.framework in Frameworks */,
+				D5BC6A5618A67AF0003BE6EA /* CoreData.framework in Frameworks */,
+				D5BC6A5418A67AF0003BE6EA /* UIKit.framework in Frameworks */,
+				D5BC6A5018A67AF0003BE6EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BC6A7518A67AF0003BE6EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BC6A7A18A67AF0003BE6EA /* XCTest.framework in Frameworks */,
+				D5BC6A7D18A67AF0003BE6EA /* CoreData.framework in Frameworks */,
+				D5BC6A7C18A67AF0003BE6EA /* UIKit.framework in Frameworks */,
+				D5BC6A7B18A67AF0003BE6EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5BC6A4318A67AF0003BE6EA = {
+			isa = PBXGroup;
+			children = (
+				D5BC6A5718A67AF0003BE6EA /* supersekiguchi-ten */,
+				D5BC6A8018A67AF0003BE6EA /* supersekiguchi-tenTests */,
+				D5BC6A4E18A67AF0003BE6EA /* Frameworks */,
+				D5BC6A4D18A67AF0003BE6EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5BC6A4D18A67AF0003BE6EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC6A4C18A67AF0003BE6EA /* supersekiguchi-ten.app */,
+				D5BC6A7818A67AF0003BE6EA /* supersekiguchi-tenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5BC6A4E18A67AF0003BE6EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC6A4F18A67AF0003BE6EA /* Foundation.framework */,
+				D5BC6A5118A67AF0003BE6EA /* CoreGraphics.framework */,
+				D5BC6A5318A67AF0003BE6EA /* UIKit.framework */,
+				D5BC6A5518A67AF0003BE6EA /* CoreData.framework */,
+				D5BC6A7918A67AF0003BE6EA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5BC6A5718A67AF0003BE6EA /* supersekiguchi-ten */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC6A6018A67AF0003BE6EA /* S10AppDelegate.h */,
+				D5BC6A6118A67AF0003BE6EA /* S10AppDelegate.m */,
+				D5BC6A6318A67AF0003BE6EA /* Main_iPhone.storyboard */,
+				D5BC6A6618A67AF0003BE6EA /* Main_iPad.storyboard */,
+				D5BC6A6C18A67AF0003BE6EA /* S10MasterViewController.h */,
+				D5BC6A6D18A67AF0003BE6EA /* S10MasterViewController.m */,
+				D5BC6A6F18A67AF0003BE6EA /* S10DetailViewController.h */,
+				D5BC6A7018A67AF0003BE6EA /* S10DetailViewController.m */,
+				D5BC6A7218A67AF0003BE6EA /* Images.xcassets */,
+				D5BC6A6918A67AF0003BE6EA /* supersekiguchi_ten.xcdatamodeld */,
+				D5BC6A5818A67AF0003BE6EA /* Supporting Files */,
+			);
+			path = "supersekiguchi-ten";
+			sourceTree = "<group>";
+		};
+		D5BC6A5818A67AF0003BE6EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC6A5918A67AF0003BE6EA /* supersekiguchi-ten-Info.plist */,
+				D5BC6A5A18A67AF0003BE6EA /* InfoPlist.strings */,
+				D5BC6A5D18A67AF0003BE6EA /* main.m */,
+				D5BC6A5F18A67AF0003BE6EA /* supersekiguchi-ten-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5BC6A8018A67AF0003BE6EA /* supersekiguchi-tenTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC6A8618A67AF0003BE6EA /* supersekiguchi_tenTests.m */,
+				D5BC6A8118A67AF0003BE6EA /* Supporting Files */,
+			);
+			path = "supersekiguchi-tenTests";
+			sourceTree = "<group>";
+		};
+		D5BC6A8118A67AF0003BE6EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC6A8218A67AF0003BE6EA /* supersekiguchi-tenTests-Info.plist */,
+				D5BC6A8318A67AF0003BE6EA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5BC6A4B18A67AF0003BE6EA /* supersekiguchi-ten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5BC6A8A18A67AF0003BE6EA /* Build configuration list for PBXNativeTarget "supersekiguchi-ten" */;
+			buildPhases = (
+				D5BC6A4818A67AF0003BE6EA /* Sources */,
+				D5BC6A4918A67AF0003BE6EA /* Frameworks */,
+				D5BC6A4A18A67AF0003BE6EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "supersekiguchi-ten";
+			productName = "supersekiguchi-ten";
+			productReference = D5BC6A4C18A67AF0003BE6EA /* supersekiguchi-ten.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5BC6A7718A67AF0003BE6EA /* supersekiguchi-tenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5BC6A8D18A67AF0003BE6EA /* Build configuration list for PBXNativeTarget "supersekiguchi-tenTests" */;
+			buildPhases = (
+				D5BC6A7418A67AF0003BE6EA /* Sources */,
+				D5BC6A7518A67AF0003BE6EA /* Frameworks */,
+				D5BC6A7618A67AF0003BE6EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5BC6A7F18A67AF0003BE6EA /* PBXTargetDependency */,
+			);
+			name = "supersekiguchi-tenTests";
+			productName = "supersekiguchi-tenTests";
+			productReference = D5BC6A7818A67AF0003BE6EA /* supersekiguchi-tenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5BC6A4418A67AF0003BE6EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = S10;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "関口徹";
+				TargetAttributes = {
+					D5BC6A7718A67AF0003BE6EA = {
+						TestTargetID = D5BC6A4B18A67AF0003BE6EA;
+					};
+				};
+			};
+			buildConfigurationList = D5BC6A4718A67AF0003BE6EA /* Build configuration list for PBXProject "supersekiguchi-ten" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5BC6A4318A67AF0003BE6EA;
+			productRefGroup = D5BC6A4D18A67AF0003BE6EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5BC6A4B18A67AF0003BE6EA /* supersekiguchi-ten */,
+				D5BC6A7718A67AF0003BE6EA /* supersekiguchi-tenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5BC6A4A18A67AF0003BE6EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BC6A6818A67AF0003BE6EA /* Main_iPad.storyboard in Resources */,
+				D5BC6A7318A67AF0003BE6EA /* Images.xcassets in Resources */,
+				D5BC6A6518A67AF0003BE6EA /* Main_iPhone.storyboard in Resources */,
+				D5BC6A5C18A67AF0003BE6EA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BC6A7618A67AF0003BE6EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BC6A8518A67AF0003BE6EA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5BC6A4818A67AF0003BE6EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BC6A5E18A67AF0003BE6EA /* main.m in Sources */,
+				D5BC6A6B18A67AF0003BE6EA /* supersekiguchi_ten.xcdatamodeld in Sources */,
+				D5BC6A6218A67AF0003BE6EA /* S10AppDelegate.m in Sources */,
+				D5BC6A6E18A67AF0003BE6EA /* S10MasterViewController.m in Sources */,
+				D5BC6A7118A67AF0003BE6EA /* S10DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BC6A7418A67AF0003BE6EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BC6A8718A67AF0003BE6EA /* supersekiguchi_tenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5BC6A7F18A67AF0003BE6EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5BC6A4B18A67AF0003BE6EA /* supersekiguchi-ten */;
+			targetProxy = D5BC6A7E18A67AF0003BE6EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5BC6A5A18A67AF0003BE6EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5BC6A5B18A67AF0003BE6EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5BC6A6318A67AF0003BE6EA /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5BC6A6418A67AF0003BE6EA /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D5BC6A6618A67AF0003BE6EA /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5BC6A6718A67AF0003BE6EA /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D5BC6A8318A67AF0003BE6EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5BC6A8418A67AF0003BE6EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5BC6A8818A67AF0003BE6EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5BC6A8918A67AF0003BE6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5BC6A8B18A67AF0003BE6EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "supersekiguchi-ten/supersekiguchi-ten-Prefix.pch";
+				INFOPLIST_FILE = "supersekiguchi-ten/supersekiguchi-ten-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D5BC6A8C18A67AF0003BE6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "supersekiguchi-ten/supersekiguchi-ten-Prefix.pch";
+				INFOPLIST_FILE = "supersekiguchi-ten/supersekiguchi-ten-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D5BC6A8E18A67AF0003BE6EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/supersekiguchi-ten.app/supersekiguchi-ten";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "supersekiguchi-ten/supersekiguchi-ten-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "supersekiguchi-tenTests/supersekiguchi-tenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D5BC6A8F18A67AF0003BE6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/supersekiguchi-ten.app/supersekiguchi-ten";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "supersekiguchi-ten/supersekiguchi-ten-Prefix.pch";
+				INFOPLIST_FILE = "supersekiguchi-tenTests/supersekiguchi-tenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5BC6A4718A67AF0003BE6EA /* Build configuration list for PBXProject "supersekiguchi-ten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BC6A8818A67AF0003BE6EA /* Debug */,
+				D5BC6A8918A67AF0003BE6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5BC6A8A18A67AF0003BE6EA /* Build configuration list for PBXNativeTarget "supersekiguchi-ten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BC6A8B18A67AF0003BE6EA /* Debug */,
+				D5BC6A8C18A67AF0003BE6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D5BC6A8D18A67AF0003BE6EA /* Build configuration list for PBXNativeTarget "supersekiguchi-tenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BC6A8E18A67AF0003BE6EA /* Debug */,
+				D5BC6A8F18A67AF0003BE6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D5BC6A6918A67AF0003BE6EA /* supersekiguchi_ten.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D5BC6A6A18A67AF0003BE6EA /* supersekiguchi_ten.xcdatamodel */,
+			);
+			currentVersion = D5BC6A6A18A67AF0003BE6EA /* supersekiguchi_ten.xcdatamodel */;
+			path = supersekiguchi_ten.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D5BC6A4418A67AF0003BE6EA /* Project object */;
+}
