@@ -1,0 +1,55 @@
+
+ここから無料登録する
+https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/
+
+住所がおかしいと何度も蹴られる
+
+その後、電話がかかってきて、PIN番号を入力して
+会員になりました。
+
+
+Account Id: 899787471751 
+Account Name: toru sekiguchi 
+Password: *****
+
+
+まずはcloud formation でdrupal をたててみる
+
+https://s3.amazonaws.com/cloudformation-templates-us-east-1/Drupal_Single_Instance.template
+
+ここからテンプレートを拝借して、
+適度にみて、修正
+
+./druapal1.tmplate を作成する
+
+やってみる
+
+パラメータ入力になった
+
+name やpasswardぽいやつはtoru とtorutoru
+
+
+t1.micro しか対応していないっぽい
+
+EC2でkey をcreate しておく必要がある
+
+urlはEC2コンソールからpublic IP をみてわかった
+
+http://54.88.84.97/
+
+簡単にできるもんだな
+
+ 
+
+0809 
+
+Domainを追加してみた
+toru0603.net 
+
+10 ドルかかるらしい
+
+cloud formartion するのにtemplateをS３におきゃなきゃならんらしい
+
+おいてっみた
+
+
