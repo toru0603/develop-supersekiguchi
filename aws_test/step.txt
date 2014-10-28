@@ -1,0 +1,157 @@
+
+
+0.aws acount の作成
+
+ここから無料登録する
+https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/
+
+住所がおかしいと何度も蹴られる
+
+その後、電話がかかってきて、PIN番号を入力して
+会員になりました。
+
+
+Account Id: 899787471751 
+Account Name: toru sekiguchi 
+Password: *****
+
+
+1. EC2 インスタンスのkeyの作成
+
+aws にログイン後、左上のServicesからEC2を選択する
+
+左ペインのKey Pairsを選択し、Create Key Pairを押下する
+
+その後のポップアップでkey名を入力
+
+Key pair name: drupal_ec2
+
+pemファイルがダウンロードできるので、大事にとっておく。
+// あとでServerにログインするのに必要です。
+
+
+
+2. drupal の作成
+
+2.1 cloud formation ファイルの作成 
+
+https://s3.amazonaws.com/cloudformation-templates-us-east-1/Drupal_Single_Instance.template
+
+上記のファイルを修正し、自分の環境にあわせたserver環境の cloud foemation template を作成する
+
+作成したものはS３においておく。
+// 置き方は割愛
+
+https://s3.amazonaws.com/drupal_temp/drupal2.template
+
+
+2.2 cloud formation stack の作成
+
+aws コンソールにログインし、左上のserviceタブからcloud formationを選択する
+
+画面後、create new stack ボタンを押下する
+
+
+2.3 cloud formation 詳細の入力
+
+name 入力　sekiguchiDrupal
+
+Specify an Amazon S3 template URL　を選択し、
+先ほど登録したS３のパスを入力する
+
+https://s3.amazonaws.com/drupal_temp/drupal2.template
+
+Next 押下
+
+
+Specify Parameters 画面に遷移後、下記を入力
+
+DBName drupaldb
+
+DBPassword torutoru
+
+DBRootPassword torutoru
+
+DBUsername toru
+
+InstanceType t1.micro
+
+KeyName drupal_ec2
+
+SiteAdmin toru
+
+SiteEMail torutoru0603@hotmail.co.jp
+
+SiteName sekiguchi drupal
+
+SitePassword torutoru
+
+SitePassword 0.0.0.0/0
+
+
+入力後、next 押下
+
+Options　の画面に遷移後、再びnext を押下
+
+Review　の画面に遷移後、create を押下
+
+
+画面が遷移し、作成したStackがCREATE_IN_PROGRESSになっていればOK
+
+// ただし、cloud formation は実行に失敗することがあるサービスなので、めげない
+// ちなみにcost は　月14.64ドル
+
+
+
+3 route53の設定
+
+3.1 EC2 のIPアドレスを調べる
+
+aws へログイン後、左上のServicesからEC2を選択する
+
+遷移後、左ペインのInstancesを選択し、
+
+Key Nameがdrupal_ec2のインスタンスのPublic IPを控えておく
+例　54.173.94.118
+
+
+3.2 Route 53への登録
+
+（ここではDomainの登録方法については割愛します）
+
+aws へログイン後、左上のServicesからRoute 53を選択する
+
+遷移後、左ペインからHosted Zonesを選択し、Create Hosted Zomeを押下
+
+Domain Name に取得したDomain名を入力し、Createを押下する
+
+作成したDomain名にチェックを入れ、Go to Record Setsを押下
+
+遷移後、Create Record Setを選択し、下記を入力
+
+name drupal
+
+Type IPv4
+
+alias no
+
+TTL 300
+
+Value (先ほど控えておいたIPアドレス)
+
+Routing Policy: Simple
+
+入力後、Createを押下
+
+
+
+4 確認
+
+ブラウザにて
+http://drupal.toru0603.net/
+にアクセスし、drupalの画面が表示されればOK
+
+// ネームサーバ情報が更新されるまで数時間から最大72時間程度かかるらしいので、
+// 表示されない場合はしばし時間をおいてからアクセスする
+
+
